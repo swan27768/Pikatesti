@@ -630,7 +630,9 @@ $(document).on(':passagerender', function (ev) {
     });
   }
 });
-</script><tw-passagedata pid="1" name="Start" tags="" position="700,275" size="100,100">
+</script><tw-passagedata pid="1" name="Start" tags="" position="700,275" size="100,100">&lt;&lt;script&gt;&gt;
+State.reset();
+&lt;&lt;/script&gt;&gt;
 &lt;&lt;set $A = 0&gt;&gt;&lt;&lt;set $B = 0&gt;&gt;&lt;&lt;set $C = 0&gt;&gt;&lt;&lt;set $D = 0&gt;&gt;
 
 &lt;p class=&quot;question&quot;&gt;Pikatesti: Mikä ammattiala voisi sopia sinulle?&lt;/p&gt;
@@ -925,7 +927,10 @@ Lopussa näet, minkä tyyppiset ammattialat voisivat sopia sinulle.
 
 </tw-passagedata><tw-passagedata pid="13" name="StoryInit" tags="" position="825,275" size="100,100">
 Pikatesti ammattialoista
-</tw-passagedata><tw-passagedata pid="14" name="Lopetus" tags="" position="950,775" size="100,100">
+&lt;&lt;script&gt;&gt;
+State.reset();
+Engine.play(&quot;Start&quot;)
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="Lopetus" tags="" position="950,775" size="100,100">
 &lt;h1&gt;Testi päättyi&lt;/h1&gt;
 &lt;p&gt;Voit sulkea välilehden tai aloittaa testin uudelleen.&lt;br&gt;Seuraavaksi paina yläpalkissa olevaa &lt;strong&gt;Ammattialat&lt;/strong&gt;-valikkoa ja lähde tutkimaan  kiinnostavia aloja.&lt;/p&gt;
 
